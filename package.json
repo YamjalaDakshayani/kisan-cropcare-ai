@@ -1,0 +1,26 @@
+{
+  "name": "kisan-crop-care-ai",
+  "version": "1.0.0",
+  "description": "Kisan CropCare AI - AI-powered crop condition checking assistant for Indian farmers",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,green\" \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "agritech",
+    "kisan",
+    "crop-care",
+    "agriculture",
+    "ai-vision",
+    "gemini",
+    "indian-farmers"
+  ],
+  "author": "Kisan CropCare Team",
+  "license": "MIT"
+}
